@@ -6,8 +6,6 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
@@ -21,4 +19,23 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B  package -Dmaven.test.skip=true --file pom.xml
+    - name: Copy jar
+      run: cp $(find . -name 'mall*.jar') app.jar
+    - name: Conventional Changelog Action
+      id: changelog
+      uses: TriPSs/conventional-changelog-action@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        output-file: "false"
+        output-file: 'MY_CUSTOM_CHANGELOG.md'
+        release-count: 0
+        skip-version-file: 'true'
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      with:
+        artifacts: "app.jar"
+        tag: ${{ steps.changelog.outputs.tag }}
+        body: ${{ steps.changelog.outputs.clean_changelog }}
+        token: ${{ secrets.GITHUB_TOKEN }}
