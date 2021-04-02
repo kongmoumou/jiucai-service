@@ -1,3 +1,13 @@
+# [0.2.0](https://github.com/kongmoumou/jiucai-service/compare/v0.1.1...v0.2.0) (2021-04-02)
+
+
+### Features
+
+* add Dockerfile ([37b3767](https://github.com/kongmoumou/jiucai-service/commit/37b37671d77b2ad0bb3179321f11351d1d1588f3))
+* ci build docker image ([4787038](https://github.com/kongmoumou/jiucai-service/commit/47870382139a6319d688f53d09c175ce108dbaa5))
+
+
+
 ## [0.1.1](https://github.com/kongmoumou/jiucai-service/compare/v0.1.0...v0.1.1) (2021-04-01)
 
 
