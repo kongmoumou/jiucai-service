@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/kongmoumou/jiucai-service/compare/v0.2.0...v0.3.0) (2021-04-02)
+
+
+### Features
+
+* add MybatisPlusInterceptor ([6e5cfeb](https://github.com/kongmoumou/jiucai-service/commit/6e5cfeb2006f52e8824f076c565f5a97b73bf8f3))
+
+
+
 # [0.2.0](https://github.com/kongmoumou/jiucai-service/compare/v0.1.1...v0.2.0) (2021-04-02)
 
 
