@@ -30,14 +30,13 @@ jobs:
         output-file: "CHANGELOG.md"
         release-count: 0
         skip-version-file: 'true'
-    - name: Build image
+    - name: Build and Save image
+      if: ${{ steps.changelog.outputs.skipped == 'false' }}
       env:
         VERSION_TAG: ${{ steps.changelog.outputs.tag }}
-      run: docker build --tag jiucai-service:${VERSION_TAG:1} .
-    - name: Save image
-      env:
-        VERSION_TAG: ${{ steps.changelog.outputs.tag }}
-      run: docker save -o ./jiucai-service.${VERSION_TAG:1}.tar jiucai-service
+      run: |
+        docker build --tag jiucai-service:${VERSION_TAG:1} .
+        docker save -o ./jiucai-service.${VERSION_TAG:1}.tar jiucai-service
     - name: Create Release
       uses: ncipollo/release-action@v1
       if: ${{ steps.changelog.outputs.skipped == 'false' }}
