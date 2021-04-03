@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/kongmoumou/jiucai-service/compare/v0.3.0...v0.4.0) (2021-04-03)
+
+
+### Features
+
+* add category api ([75b98dd](https://github.com/kongmoumou/jiucai-service/commit/75b98dd4d4ac64d5de6cccdf1d1b6f68c0002288))
+
+
+
 # [0.3.0](https://github.com/kongmoumou/jiucai-service/compare/v0.2.0...v0.3.0) (2021-04-02)
 
 
