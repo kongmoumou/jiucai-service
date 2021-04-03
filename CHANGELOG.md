@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/kongmoumou/jiucai-service/compare/v0.4.0...v0.5.0) (2021-04-03)
+
+
+### Features
+
+* add product api ([a84cedb](https://github.com/kongmoumou/jiucai-service/commit/a84cedb7499a3cd714ea83f53405e6b7cb7026c6))
+
+
+
 # [0.4.0](https://github.com/kongmoumou/jiucai-service/compare/v0.3.0...v0.4.0) (2021-04-03)
 
 
