@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/kongmoumou/jiucai-service/compare/v0.5.0...v0.5.1) (2021-04-03)
+
+
+### Bug Fixes
+
+* fix ci ([d630ef9](https://github.com/kongmoumou/jiucai-service/commit/d630ef90f1c6482ad0f60fe6cf292f08cbb48130))
+
+
+
 # [0.5.0](https://github.com/kongmoumou/jiucai-service/compare/v0.4.0...v0.5.0) (2021-04-03)
 
 
