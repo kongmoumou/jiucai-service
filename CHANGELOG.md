@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/kongmoumou/jiucai-service/compare/v0.5.1...v0.6.0) (2021-04-14)
+
+
+### Features
+
+* add files relate to cart ([3811e55](https://github.com/kongmoumou/jiucai-service/commit/3811e55626902b28f2bab77941830784ec5753c4))
+
+
+
 ## [0.5.1](https://github.com/kongmoumou/jiucai-service/compare/v0.5.0...v0.5.1) (2021-04-03)
 
 
