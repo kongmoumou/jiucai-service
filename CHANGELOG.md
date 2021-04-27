@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/kongmoumou/jiucai-service/compare/v0.6.0...v0.7.0) (2021-04-27)
+
+
+### Features
+
+* add shipping api ([fd3f47e](https://github.com/kongmoumou/jiucai-service/commit/fd3f47ef7c65289415512e1af13d0c591e5aafb1))
+
+
+
 # [0.6.0](https://github.com/kongmoumou/jiucai-service/compare/v0.5.1...v0.6.0) (2021-04-14)
 
 
