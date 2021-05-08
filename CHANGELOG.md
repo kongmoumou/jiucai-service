@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/kongmoumou/jiucai-service/compare/v0.7.0...v0.8.0) (2021-05-08)
+
+
+### Features
+
+* add order api ([8a0e212](https://github.com/kongmoumou/jiucai-service/commit/8a0e21297e8b484a6b6cc13a69d7f54078088a7b))
+
+
+
 # [0.7.0](https://github.com/kongmoumou/jiucai-service/compare/v0.6.0...v0.7.0) (2021-04-27)
 
 
