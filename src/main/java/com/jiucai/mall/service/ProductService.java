@@ -1,6 +1,7 @@
 package com.jiucai.mall.service;
 
 import com.jiucai.mall.common.UniformResponse;
+import com.jiucai.mall.entity.ProductEntity;
 
 public interface ProductService {
 
@@ -21,4 +22,11 @@ public interface ProductService {
      * @return
      */
     UniformResponse<Object> getProductList(Integer categoryId, String keyword, int pageNum, int pageSize, String orderBy);
+
+    /**
+     * 新增商品
+     * @param productEntity
+     * @return
+     */
+    UniformResponse<Object> addProduct(ProductEntity productEntity);
 }

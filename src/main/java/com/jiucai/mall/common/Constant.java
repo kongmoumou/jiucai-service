@@ -47,7 +47,9 @@ public class Constant {
         UpdateCategory("更新商品类别失败，请稍后再试！","更新商品类别成功！"),
 
         GetProductDetail("未找到该商品的相关信息！","找到相关商品的信息！"),
-        GetProductList("未找到该商品的相关信息！","找到相关商品的信息！");
+        GetProductList("未找到该商品的相关信息！","找到相关商品的信息！"),
+        AddProduct("新增商品失败！","新增商品成功~"),
+        ;
 
         private String FAIL;
         private String SUCCESS;
@@ -169,6 +171,7 @@ public class Constant {
         String PRODUCT = "/product/";
         String GET_PRODUCT = "get_product";
         String GET_PRODUCT_LIST = "list";
+        String ADD_PRODUCT = "add_product";
 
     }
 

@@ -177,4 +177,18 @@ public class ProductServiceImpl implements ProductService {
         productDataVo.setPages(result.getPages());
         return productDataVo;
     }
+
+    /**
+     * @param productEntity
+     * @return
+     */
+    @Override
+    public UniformResponse<Object> addProduct(ProductEntity productEntity) {
+        int rows = productMapper.insert(productEntity);
+        if (rows == 0) {
+            return UniformResponse.ResponseForError(Constant.userMsg.AddProduct.getFAIL());
+        } else {
+            return UniformResponse.ResponseForSuccess(Constant.userMsg.AddProduct.getSUCCESS());
+        }
+    }
 }

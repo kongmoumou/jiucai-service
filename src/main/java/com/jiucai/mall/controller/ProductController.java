@@ -2,10 +2,12 @@ package com.jiucai.mall.controller;
 
 import com.jiucai.mall.common.Constant;
 import com.jiucai.mall.common.UniformResponse;
+import com.jiucai.mall.entity.ProductEntity;
 import com.jiucai.mall.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -50,6 +52,14 @@ public class ProductController {
             @RequestParam(name = "orderBy", defaultValue = "") String orderBy) {
         UniformResponse<Object> response =
                 productService.getProductList(categoryId, keyword, pageNum, pageSize, orderBy);
+        return response;
+    }
+
+    @PostMapping(Constant.productRouting.ADD_PRODUCT)
+    @ResponseBody
+    public UniformResponse addProduct(ProductEntity productEntity) {
+        UniformResponse<Object> response =
+                productService.addProduct(productEntity);
         return response;
     }
 }
