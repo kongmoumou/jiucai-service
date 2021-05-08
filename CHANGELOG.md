@@ -1,3 +1,12 @@
+## [0.8.1](https://github.com/kongmoumou/jiucai-service/compare/v0.8.0...v0.8.1) (2021-05-08)
+
+
+### Bug Fixes
+
+* auto fill `create_time` & `update_time` field ([0fa4af6](https://github.com/kongmoumou/jiucai-service/commit/0fa4af693bde50431cd431542e401c37af8c09bf))
+
+
+
 # [0.8.0](https://github.com/kongmoumou/jiucai-service/compare/v0.7.0...v0.8.0) (2021-05-08)
 
 
