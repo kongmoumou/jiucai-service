@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/kongmoumou/jiucai-service/compare/v0.9.0...v0.10.0) (2021-05-10)
+
+
+### Features
+
+* add docker-compose.yml ([33bc90b](https://github.com/kongmoumou/jiucai-service/commit/33bc90b673dc99e2e47a7715554c2fb0f7f7a73d))
+
+
+
 # [0.9.0](https://github.com/kongmoumou/jiucai-service/compare/v0.8.1...v0.9.0) (2021-05-08)
 
 
