@@ -1,3 +1,19 @@
+## [0.11.1](https://github.com/kongmoumou/jiucai-service/compare/v0.11.0-alpha...v0.11.1) (2021-05-30)
+
+
+### Bug Fixes
+
+* add maven-resources-plugin ([c7de356](https://github.com/kongmoumou/jiucai-service/commit/c7de356b126e2ea270223e18f8400dc47cb1a90c))
+* add maven-resources-plugin ([7ded4a0](https://github.com/kongmoumou/jiucai-service/commit/7ded4a0fdd349aff13f5049b2c66822830f52eff))
+* fix deploy ci ([d370bb7](https://github.com/kongmoumou/jiucai-service/commit/d370bb7e4548c32b21b2981043fc6a086ee11077))
+* maven-resources-plugin 3.2.0 -> 3.1.0 ([0af2b69](https://github.com/kongmoumou/jiucai-service/commit/0af2b69ff0ddf41a4a276009d49dba34ee9ed6d9))
+
+
+
+# [0.11.0-alpha](https://github.com/kongmoumou/jiucai-service/compare/v0.11.0...v0.11.0-alpha) (2021-05-30)
+
+
+
 # [0.11.0](https://github.com/kongmoumou/jiucai-service/compare/v0.10.0...v0.11.0) (2021-05-23)
 
 
