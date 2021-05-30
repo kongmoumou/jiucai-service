@@ -1,3 +1,64 @@
+## [0.11.5](https://github.com/kongmoumou/jiucai-service/compare/v0.11.4...v0.11.5) (2021-05-30)
+
+
+### Bug Fixes
+
+* fix ci ([3cf5679](https://github.com/kongmoumou/jiucai-service/commit/3cf5679fcacaa8797e01b92331c10374d112c71b))
+
+
+
+## [0.11.4](https://github.com/kongmoumou/jiucai-service/compare/v0.11.3...v0.11.4) (2021-05-30)
+
+
+### Bug Fixes
+
+* fix deploy ([5ec65af](https://github.com/kongmoumou/jiucai-service/commit/5ec65af4317a2ff3349024483d10cdd7cb0b444e))
+
+
+
+## [0.11.3](https://github.com/kongmoumou/jiucai-service/compare/v0.11.2...v0.11.3) (2021-05-30)
+
+
+### Bug Fixes
+
+* fix ci ([11696d7](https://github.com/kongmoumou/jiucai-service/commit/11696d7faada2cc9223db8ae4ceaaf60cfa7406a))
+
+
+
+## [0.11.2](https://github.com/kongmoumou/jiucai-service/compare/v0.11.1...v0.11.2) (2021-05-30)
+
+
+### Bug Fixes
+
+* fix ci ([dbc6768](https://github.com/kongmoumou/jiucai-service/commit/dbc676820a52d0d86737248f76ce4a778281e56a))
+
+
+
+## [0.11.1](https://github.com/kongmoumou/jiucai-service/compare/v0.11.0-alpha...v0.11.1) (2021-05-30)
+
+
+### Bug Fixes
+
+* add maven-resources-plugin ([c7de356](https://github.com/kongmoumou/jiucai-service/commit/c7de356b126e2ea270223e18f8400dc47cb1a90c))
+* add maven-resources-plugin ([7ded4a0](https://github.com/kongmoumou/jiucai-service/commit/7ded4a0fdd349aff13f5049b2c66822830f52eff))
+* fix deploy ci ([d370bb7](https://github.com/kongmoumou/jiucai-service/commit/d370bb7e4548c32b21b2981043fc6a086ee11077))
+* maven-resources-plugin 3.2.0 -> 3.1.0 ([0af2b69](https://github.com/kongmoumou/jiucai-service/commit/0af2b69ff0ddf41a4a276009d49dba34ee9ed6d9))
+
+
+
+# [0.11.0-alpha](https://github.com/kongmoumou/jiucai-service/compare/v0.11.0...v0.11.0-alpha) (2021-05-30)
+
+
+
+# [0.11.0](https://github.com/kongmoumou/jiucai-service/compare/v0.10.0...v0.11.0) (2021-05-23)
+
+
+### Features
+
+* add files relate to pay api ([e94cfb0](https://github.com/kongmoumou/jiucai-service/commit/e94cfb0d22fb019a25f34bfd3a2384d13c442638))
+
+
+
 # [0.10.0](https://github.com/kongmoumou/jiucai-service/compare/v0.9.0...v0.10.0) (2021-05-10)
 
 

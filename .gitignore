@@ -35,3 +35,5 @@ build/
 scripts/
 
 app.jar
+
+data/
