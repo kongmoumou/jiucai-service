@@ -29,6 +29,6 @@ jobs:
           cd ${{ secrets.CWD }}
           git pull
           git checkout -f $JIUCAI_TAG
-          chmod +x build.sh start.sh
+          chmod +x build.sh start.sh mvnw
           ./build.sh
           ./start.sh
