@@ -6,15 +6,17 @@ import com.jiucai.mall.entity.ProductEntity;
 import com.jiucai.mall.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import com.jiucai.mall.utils.OSSUtil;
+
+import java.io.IOException;
 
 @Controller
 @RequestMapping(Constant.productRouting.PRODUCT)
 public class ProductController {
+
+    @Autowired
+    private OSSUtil ossUtil;
 
     @Autowired
     private ProductService productService;
@@ -62,4 +64,35 @@ public class ProductController {
                 productService.addProduct(productEntity);
         return response;
     }
+
+    @PostMapping("addAdminProduct")
+    @ResponseBody
+    public UniformResponse addAdminProduct(@RequestBody ProductEntity productEntity) throws IOException {
+
+        String mainImage = productEntity.getMainImage();
+        String[] subImages = productEntity.getSubImages().split(";;;");
+
+        String mainImageName = "";
+        String subImagesName = "";
+
+        // 上传图片
+        mainImageName = ossUtil.upLoadImage(mainImage);
+        for (int i = 0; i < subImages.length; ++i) {
+            if (i != subImages.length - 1) {
+                subImagesName += ossUtil.upLoadImage(subImages[i]);
+                subImagesName += ",";
+            } else {
+                subImagesName += ossUtil.upLoadImage(subImages[i]);
+            }
+        }
+
+        // 重置图片名字
+        productEntity.setMainImage(mainImageName);
+        productEntity.setSubImages(subImagesName);
+
+        // 写入数据库
+        return productService.addProduct(productEntity);
+
+    }
+
 }
