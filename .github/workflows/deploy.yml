@@ -26,6 +26,8 @@ jobs:
         port: ${{ secrets.PORT }}
         envs: JIUCAI_TAG
         script: |
+          source ~/.zshrc
+          export JIUCAI_TAG=$JIUCAI_TAG
           cd ${{ secrets.CWD }}
           git fetch
           git checkout -f $JIUCAI_TAG
