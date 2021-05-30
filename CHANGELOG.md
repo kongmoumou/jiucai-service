@@ -1,3 +1,17 @@
+# [0.12.0](https://github.com/kongmoumou/jiucai-service/compare/v0.11.5...v0.12.0) (2021-05-30)
+
+
+### Bug Fixes
+
+* BASE64Decoder -> util.Base64 ([#9](https://github.com/kongmoumou/jiucai-service/issues/9)) ([0af9862](https://github.com/kongmoumou/jiucai-service/commit/0af986242b8fe29b4ad35745d9ee011e51326070))
+
+
+### Features
+
+* add files relates to OSS ([c15bd43](https://github.com/kongmoumou/jiucai-service/commit/c15bd4326af8701db1e982b8e236178b2ee5242c))
+
+
+
 ## [0.11.5](https://github.com/kongmoumou/jiucai-service/compare/v0.11.4...v0.11.5) (2021-05-30)
 
 
