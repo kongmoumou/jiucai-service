@@ -10,7 +10,8 @@ import com.aliyun.oss.OSSException;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import sun.misc.BASE64Decoder;
+import java.util.Base64;
+
 
 @Component
 public class OSSUtil{
@@ -46,8 +47,8 @@ public class OSSUtil{
         long currentTime = System.currentTimeMillis();
         imageName = String.valueOf(currentTime) + "." + suffix;
 
-        BASE64Decoder decoder = new BASE64Decoder();
-        byte[] imageByte = decoder.decodeBuffer(image);
+        Base64.Decoder decoder = Base64.getDecoder();
+        byte[] imageByte = decoder.decode(image);
 
         try {
             // 判断Bucket是否存在
