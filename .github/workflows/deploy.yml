@@ -27,8 +27,9 @@ jobs:
         envs: JIUCAI_TAG
         script: |
           cd ${{ secrets.CWD }}
-          git pull
+          git fetch
           git checkout -f $JIUCAI_TAG
           chmod +x build.sh start.sh mvnw
+          jabba use default
           ./build.sh
           ./start.sh
