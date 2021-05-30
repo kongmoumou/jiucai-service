@@ -1,3 +1,12 @@
+## [0.12.1](https://github.com/kongmoumou/jiucai-service/compare/v0.12.0...v0.12.1) (2021-05-30)
+
+
+### Bug Fixes
+
+* kEY config ([22ed64c](https://github.com/kongmoumou/jiucai-service/commit/22ed64ca34f937e645c0c943586d11bab1960910))
+
+
+
 # [0.12.0](https://github.com/kongmoumou/jiucai-service/compare/v0.11.5...v0.12.0) (2021-05-30)
 
 
