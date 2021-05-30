@@ -1,0 +1,34 @@
+name: Deploy
+
+on:
+  push:
+    tags: 
+      - 'v*.*.*'
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Get tag name
+      id: tagName
+      uses: olegtarasov/get-tag@v2.1
+    - name: Deploy
+      uses: appleboy/ssh-action@master
+      env:
+        JIUCAI_TAG: ${{ steps.tagName.outputs.tag }}
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PWD }}
+        port: ${{ secrets.PORT }}
+        envs: JIUCAI_TAG
+        script: |
+          cd ${{ secrets.CWD }}
+          git pull
+          git checkout -f $JIUCAI_TAG
+          chmod +x build.sh start.sh
+          ./build.sh
+          ./start.sh
