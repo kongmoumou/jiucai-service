@@ -9,6 +9,8 @@ services:
     environment:
       DB_PWD: jiucai
       DB_URL: jdbc:mysql://mysql:3306/jiucai?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+      ALI_PRIVATEKEY: ${ALI_PRIVATEKEY}
+      ALIYUN_SECRETKEY: ${ALIYUN_SECRETKEY}
     depends_on:
       - db
   db:

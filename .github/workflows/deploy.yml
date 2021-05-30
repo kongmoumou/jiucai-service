@@ -19,15 +19,19 @@ jobs:
       uses: appleboy/ssh-action@master
       env:
         JIUCAI_TAG: ${{ steps.tagName.outputs.tag }}
+        ALI_PRIVATEKEY: ${{ secrets.ALI_PRIVATEKEY }}
+        ALIYUN_SECRETKEY: ${{ secrets.ALIYUN_SECRETKEY }}
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PWD }}
         port: ${{ secrets.PORT }}
-        envs: JIUCAI_TAG
+        envs: JIUCAI_TAG,ALI_PRIVATEKEY,ALIYUN_SECRETKEY
         script: |
           source ~/.zshrc
           export JIUCAI_TAG=$JIUCAI_TAG
+          export ALI_PRIVATEKEY=$ALI_PRIVATEKEY
+          export ALIYUN_SECRETKEY=$ALIYUN_SECRETKEY
           cd ${{ secrets.CWD }}
           git fetch
           git checkout -f $JIUCAI_TAG
