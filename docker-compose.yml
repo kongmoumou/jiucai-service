@@ -11,6 +11,7 @@ services:
       DB_URL: jdbc:mysql://mysql:3306/jiucai?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
       ALI_PRIVATEKEY: ${ALI_PRIVATEKEY}
       ALIYUN_SECRETKEY: ${ALIYUN_SECRETKEY}
+      ALIYUN_ACCESSKEY: ${ALIYUN_ACCESSKEY}
     depends_on:
       - db
   db:
