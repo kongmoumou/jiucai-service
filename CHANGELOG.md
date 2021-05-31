@@ -1,3 +1,12 @@
+## [0.12.2](https://github.com/kongmoumou/jiucai-service/compare/v0.12.1...v0.12.2) (2021-05-31)
+
+
+### Bug Fixes
+
+* fix key security problem ([d7f6c17](https://github.com/kongmoumou/jiucai-service/commit/d7f6c17595395d390a9f5d94734db4ced3d525f8))
+
+
+
 ## [0.12.1](https://github.com/kongmoumou/jiucai-service/compare/v0.12.0...v0.12.1) (2021-05-30)
 
 
